@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition Program - Astha Shakti</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: white /* Deep blue for header */
+            color: white;
+            padding: 10px 0;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: black    ;
+            text-decoration: none;
+            
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #90caf9; /* Light blue for hover effect */
+        }
+        main {
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #e6f3ff; /* Darker blue for headings */
+        }
+        .section-content {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            flex-wrap: wrap; /* Ensures proper alignment on smaller screens */
+        }
+        
+        .section-content:nth-child(odd) {
+            flex-direction: row; /* Image on the left, text on the right */
+        }
+        
+        
+        
+        .section-text {
+            width: 60%; /* Ensure consistent width */
+            padding: 10px 20px;
+            text-align: justify;
+             /* Align text to the left */
+        }
+        
+        .section-content img {
+            width: 30%; /* Image width */
+            border-radius: 10px;
+            object-fit: cover; /* Ensures images maintain aspect ratio */
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: #006db3; /* Mid-blue for button */
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+            align:center;
+        }
+        .cta-button:hover {
+            background: #90caf9; /* Light blue for hover effect */
+        }
+        footer {
+            background: #004c80; /* Footer blue */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="Image/d9ee3fb414 (1) (1).jpg" alt="Astha Shakti Logo" class="logo-img">
+                <div class="logo-text">Astha Shakti</div>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About Us</a></li>
+                <li><a href="index.html#programs">Programs</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="nutrition-program">
+            <h1>Nutrition Program</h1>
+            <div class="section-content">
+                <div class="section-text">
+                    <p>
+                        Astha Shakti's flagship initiative, <strong>Nutri-Ed (Nutritive Food with Education)</strong>, endeavors to offer hygienic sustenance and simplified learning opportunities to underprivileged communities. Recognized by governmental bodies and corporate entities alike for its outstanding societal contributions, Nutri-Ed has undergone significant growth since its establishment in 2009.
+                    </p>
+                </div>
+                <img src="Image/6.png" alt="Nutri-Ed Program">
+            </div>
+
+            <div class="section-content">
+                <img src="Image/7.jpg" alt="Nutrition Matters">
+                <div class="section-text">
+                    <h2>Why Nutrition Matters</h2>
+                    <p>
+                        Malnutrition remains a major barrier to education and development among underprivileged children. At Astha Shakti, we believe that access to nutritious meals is essential for both physical and mental well-being, enabling children to focus on their studies and achieve their full potential.
+                    </p>
+                </div>
+            </div>
+
+            <div class="section-content">
+                <div class="section-text">
+                    <h2>Our Approach</h2>
+                    <ul>
+                        <li><strong>Nutritious Meals:</strong> Daily healthy meals that meet the dietary needs of growing children.</li>
+                        <li><strong>Hygiene Awareness:</strong> Workshops to teach the importance of cleanliness and food safety.</li>
+                        <li><strong>Holistic Development:</strong> A combination of food, education, and emotional support for overall growth.</li>
+                        <li><strong>Community Engagement:</strong> Partnering with local organizations and individuals to distribute meals effectively.</li>
+                    </ul>
+                </div>
+                <img src="Image/8.jpg" alt="Our Approach">
+            </div>
+
+            <div class="section-content">
+                <img src="Image/10.jpg" alt="Our Impact">
+                <div class="section-text">
+                    <h2>Our Impact</h2>
+                    <p>
+                        Since 2009, the Nutri-Ed program has touched the lives of thousands of children and their families. By ensuring access to balanced meals and quality education, we are not only tackling hunger but also helping to break the cycle of poverty in underprivileged communities.
+                    </p>
+                </div>
+            </div>
+
+            <div class="section-content">
+                <div class="section-text">
+                    <h2>Join Us in the Fight Against Hunger</h2>
+                    <p>
+                        Together, we can make a difference. Support our Nutrition Program by sponsoring a meal, donating resources, or volunteering your time. Every contribution helps us take one more step toward building a healthier, educated society.
+                    </p>
+                    <br><br><br><br><br>
+                    <a href="donate.html" class="cta-button">Support Our Program</a>
+                </div>
+                <img src="Image/9.jpg" alt="Join Us">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Astha Shakti. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,12 @@
+📌 Step 4: Configure SMTP for Different Providers
+Hosting Provider	SMTP Server	Port	Encryption
+GoDaddy	smtpout.secureserver.net	587	TLS
+Bluehost	mail.yourdomain.com	465 (SSL) / 587 (TLS)	SSL/TLS
+Hostinger	smtp.hostinger.com	587	TLS
+SiteGround	smtp.siteground.net	465 (SSL) / 587 (TLS)	SSL/TLS
+DreamHost	smtp.dreamhost.com	465 (SSL) / 587 (TLS)	SSL/TLS
+Namecheap	mail.privateemail.com	587	TLS
+Google (Gmail SMTP)	smtp.gmail.com	587 (TLS) / 465 (SSL)	SSL/TLS
+Zoho Mail	smtp.zoho.com	465 (SSL) / 587 (TLS)	SSL/TLS
+Microsoft Outlook/Office 365	smtp.office365.com	587	TLS
+🔹 If you change hosting providers, just update these settings in send_email.php.

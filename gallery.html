@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Astha Shakti</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="Image/d9ee3fb414 (1) (1).jpg" alt="Astha Shakti Logo" class="logo-img">
+                <span class="logo-text">Astha Shakti</span>
+            </div>
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About Us</a></li>
+                <li><a href="index.html#programs">Programs</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    
+
+    <section class="gallery-section">
+        <h2>Our Gallery</h2>
+        <div class="gallery-grid">
+            <!-- Students in Classroom -->
+            <div class="gallery-item" onclick="openLightbox('Students in Classroom', 0)">
+                <img src="Image/3.png" alt="Students learning" loading="lazy">
+                <div class="gallery-caption">Students in Classroom</div>
+            </div>
+    
+            <!-- Food Drive -->
+            <div class="gallery-item" onclick="openLightbox('Food Drive', 0)">
+                <img src="Image/4.jpg" alt="Food Drive" loading="lazy">
+                <div class="gallery-caption">Food Drive</div>
+            </div>
+    
+            <!-- Extracurricular Activities -->
+            <div class="gallery-item" onclick="openLightbox('Extracurricular Activities', 0)">
+                <img src="Image/5.png" alt="Extracurricular activities" loading="lazy">
+                <div class="gallery-caption">Extracurricular Activities</div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" src="">
+        <div class="lightbox-caption" id="lightbox-caption"></div>
+        <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+        <a class="next" onclick="changeImage(1)">&#10095;</a>
+    </div>
+    
+
+    <footer>
+        <p>&copy; 2024 Astha Shakti. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    
+</body>
+</html> 

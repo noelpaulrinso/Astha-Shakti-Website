@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer Registration - Astha Shakti</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(to right, #013c8a, #1976d2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 500px;
+            width: 100%;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        h2 {
+            color: #013c8a;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #555;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 12px;
+            text-align: left;
+            color: #013c8a;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            border-color: #1976d2;
+            outline: none;
+        }
+
+        button {
+            width: 100%;
+            background: #013c8a;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 15px;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #1976d2;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Volunteer Registration</h2>
+    <p>Join us in making a difference! Fill out the form below to get started.</p>
+
+    <form action="send_email.php" method="POST">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="occupation">Occupation:</label>
+        <select id="occupation" name="occupation" required>
+            <option value="Student">Student</option>
+            <option value="Professional">Working Professional</option>
+            <option value="Freelancer">Freelancer</option>
+            <option value="Entrepreneur">Entrepreneur</option>
+            <option value="Home Maker">Home Maker</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <label for="interest">Area of Interest:</label>
+        <select id="interest" name="interest" required>
+            <option value="Education & Literacy">Education & Literacy</option>
+            <option value="Nutrition & Health">Nutrition & Health</option>
+            <option value="Environmental Initiatives">Environmental Initiatives</option>
+            <option value="Fundraising">Fundraising</option>
+            <option value="Art & Culture">Art & Culture</option>
+            <option value="Social Media & Digital Marketing">Social Media & Digital Marketing</option>
+        </select>
+
+        <label for="message">Why do you want to volunteer?</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Register</button>
+    </form>
+</div>
+
+</body>
+</html>

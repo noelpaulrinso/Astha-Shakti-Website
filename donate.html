@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - Astha Shakti</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background: white;
+            color: white;
+            padding: 10px 0;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: black;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #90caf9;
+        }
+        main {
+            padding: 20px;
+        }
+        .donation-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            width: 50%;
+            padding: 20px;
+            border: 2px solid #006db3;
+            border-radius: 10px;
+            background: #f9f9f9;
+        }
+        .qr-code img {
+            width: 200px;
+            height: auto;
+            margin: 20px 0;
+        }
+        footer {
+            background: #004c80;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="Image/d9ee3fb414 (1) (1).jpg" alt="Astha Shakti Logo" class="logo-img">
+                <div class="logo-text">Astha Shakti</div>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About Us</a></li>
+                <li><a href="index.html#programs">Programs</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="donation-container">
+            <h1>Support Our Cause</h1>
+            <p>Scan the QR code below to donate and make a difference.</p>
+            <div class="qr-code">
+                <img src="Image/qr-code.png" alt="Donate QR Code">
+            </div>
+            <p>Thank you for your support!</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Astha Shakti. All rights reserved.</p>
+    </footer>
+</body>
+</html>
